@@ -99,7 +99,7 @@ The plot of policy, explains that whenever Velocity i.e $\omega$ is is positive 
 <!-- <p align = 'center'><img src ='assets\policy1.png'></p> 
 <p align = 'center'><em>Plot of Policy</em></p>  -->
 
-![Alt text](assets\value1.png)|![Alt text](assets\policy1.png)
+![](assets\value1.png)|![](assets\policy1.png)
  :--:|:--:
   *Plot of Value Function* |*Plot of Policy*
 

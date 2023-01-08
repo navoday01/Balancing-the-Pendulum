@@ -90,7 +90,7 @@ To understand it in a better way we can compare the plot of omega with the plot 
 <p align = 'center'><em>Plot of control vs time</em></p> 
 
 ![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/cost1.png)|![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/state1.png)
-:--:|
+:--:|:--:
 *Plot of cost vs episodes* |
 ![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/control1.png)|
 :--:|:--:

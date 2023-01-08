@@ -24,7 +24,7 @@ We want to minimize the following discounted cost function
 
 $$\sum_{i=0}^{\infty} \alpha^i g(x_i, u_i)$$ where 
 
-$$g(x_i, u_i) = (\theta-\pi)^2 + 0.01 \cdot \dot{\theta}_i^2 + 0.0001 \cdot u_i^2 $$ and $$\alpha=0.99$$.
+$$g(x_i, u_i) = (\theta-\pi)^2 + 0.01 \cdot \dot{\theta}_i^2 + 0.0001 \cdot u_i^2 $$ and $$\alpha=0.99$$
 
 This cost mostly penalizes deviations from the inverted position but also encourages small velocities and control.
 
@@ -70,4 +70,32 @@ $$ \delta_{t} = g(x_t, u_t) + \alpha \min_{u}Q(x_{t+1}, u) - Q(x_t, u_t) $$
 and the value of Q is updated by adding the product of learning rate and tempral difference error to Q as shown in equation,
 
 $$ Q(x_t, u_t) \gets Q(x_t, u_t) + \gamma \delta_{t} $$
+
+## When control $u \in \{-4,0,4\}$
+
+By taking control $u \in \{-4,0,4\}$ and the model was trained for 10000 episodes keeping $\gamma = 0.1$ and $\epsilon = 0.3$. It can be observed from the plot of cost vs episodes that the model is taking around 5000 episodes to train after which it is stabilized. Also, the moving average of cost keeping window size equal to 100 is also plotted to get clarity on the behavior of cost over the episodes.
+
+<p align = 'center'><img src ='assets\cost1.png'></p> 
+<p align = 'center'><em>Plot of cost vs episodes</em></p> 
+
+The pendulum took 2 swings to reach the inverted position in almost 3 seconds which can be observed from the plots of states w.r.t. time
+<p align = 'center'><img src ='assets\state1.png'></p> 
+<p align = 'center'><em>Plot of states vs time</em></p> 
+
+From the control plots, it can be observed that for the values of control in a given range it is taking more time to be at the same value of control during that time the pendulum is trying to attain momentum to reach the swing upward condition. When it is close to the desired condition it is taking less time to be at the same control value and after reaching the inverted position the control is oscillating at a high rate between an upper and lower limit which is equivalent to zero control.
+
+To understand it in a better way we can compare the plot of omega with the plot of controls and understand that whenever the value of omega is positive, the control is positive and vice versa. 
+
+<p align = 'center'><img src ='assets\control1.png'></p> 
+<p align = 'center'><em>Plot of control vs time</em></p> 
+
+The plot of value function with respect to states can be observed that the value function is maximum when $\omega$ is zero and $\theta$ is at it's extreme values.
+
+<p align = 'center'><img src ='assets\value1.png'></p> 
+<p align = 'center'><em>Plot of control vs time</em></p> 
+
+The plot of policy, explains that whenever Velocity i.e $\omega$ is is positive the policy also has the positive value and and when velocity is negative, the policy is also negative except for few cases. 
+
+<p align = 'center'><img src ='assets\policy1.png'></p> 
+<p align = 'center'><em>Plot of control vs time</em></p> 
 

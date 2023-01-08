@@ -3,5 +3,7 @@ Implemented Q-learning with a Q-table to achieve desired position for simple pen
 
 <p align = 'center'>
 <img src ='assets/pendulum.gif' alt>
+</p>   
+<p align = 'center'>  
 <em>simple pendulum</em>
 </p> 

@@ -13,10 +13,10 @@ The inverted pendulum has a limit on the maximum torque it can apply, therefore 
 
 In the following, we will write 
 
-$x = \begin{pmatrix} 
+$$x = \begin{pmatrix} 
 \theta \\ 
 \omega 
-\end{pmatrix}$
+\end{pmatrix}$$
 
 as the vector of states of the system. We will also work with time-discretized dynamics, and refer to $x_n$ as the state at time $t = n \Delta t$ (assuming discretization time $\Delta t$)
 
@@ -24,6 +24,6 @@ We want to minimize the following discounted cost function
 
 $$\sum_{i=0}^{\infty} \alpha^i g(x_i, u_i)$$ where 
 
-$$g(x_i, u_i) = (\theta-\pi)^2 + 0.01 \cdot \dot{\theta}_i^2 + 0.0001 \cdot u_i^2 $$ and $\alpha=0.99$.
+$$g(x_i, u_i) = (\theta-\pi)^2 + 0.01 \cdot \dot{\theta}_i^2 + 0.0001 \cdot u_i^2 $$ and $$\alpha=0.99$$.
 
 This cost mostly penalizes deviations from the inverted position but also encourages small velocities and control.

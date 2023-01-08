@@ -39,4 +39,4 @@ Q-table gives the quality of the state and action pair, where value of $Q$ is gi
 
 $$ Q(x_t,u_t)=g(x_t, u_t)+ \alpha \min_{u}Q(x_{t+1}, u) $$
 
-To obtain next state in above equation, $x_{n+1}$ given $(x_n, u_n)$ a function is defined that integrates the pendulum for one step of 0.1 seconds and returns the next state of the pendulum as a 2D numpy array at the end of the integration.
+To obtain next state in above equation, $x_{n+1}$ given $(x_n, u_n)$ a function is defined that integrates the pendulum for one step of $0.1$ seconds and returns the next state of the pendulum as a $2D$ numpy array at the end of the integration.

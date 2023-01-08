@@ -75,18 +75,18 @@ $$ Q(x_t, u_t) \gets Q(x_t, u_t) + \gamma \delta_{t} $$
 
 By taking control $u \in \{-4,0,4\}$ and the model was trained for 10000 episodes keeping $\gamma = 0.1$ and $\epsilon = 0.3$. It can be observed from the plot of cost vs episodes that the model is taking around 5000 episodes to train after which it is stabilized. Also, the moving average of cost keeping window size equal to 100 is also plotted to get clarity on the behavior of cost over the episodes.
 
-<p align = 'center'><img src ='assets\cost1.png' width="800" height="300"></p> 
+<p align = 'center'><img src ='assets\cost1.png' width="800" height="400"></p> 
 <p align = 'center'><em>Plot of cost vs episodes</em></p> 
 
 The pendulum took 2 swings to reach the inverted position in almost 3 seconds which can be observed from the plots of states w.r.t. time
-<p align = 'center'><img src ='assets\state1.png' width="800" height="600"></p> 
+<p align = 'center'><img src ='assets\state1.png' width="800" height="800"></p> 
 <p align = 'center'><em>Plot of states vs time</em></p> 
 
 From the control plots, it can be observed that for the values of control in a given range it is taking more time to be at the same value of control during that time the pendulum is trying to attain momentum to reach the swing upward condition. When it is close to the desired condition it is taking less time to be at the same control value and after reaching the inverted position the control is oscillating at a high rate between an upper and lower limit which is equivalent to zero control.
 
 To understand it in a better way we can compare the plot of omega with the plot of controls and understand that whenever the value of omega is positive, the control is positive and vice versa. 
 
-<p align = 'center'><img src ='assets\control1.png' width="800" height="300"></p> 
+<p align = 'center'><img src ='assets\control1.png' width="800" height="400"></p> 
 <p align = 'center'><em>Plot of control vs time</em></p> 
 
 

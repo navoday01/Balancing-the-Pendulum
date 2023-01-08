@@ -13,10 +13,10 @@ The inverted pendulum has a limit on the maximum torque it can apply, therefore 
 
 In the following, we will write 
 
-$$x = \begin{pmatrix} 
+$x = \begin{pmatrix} 
 \theta \\ 
 \omega 
-\end{pmatrix}$$ 
+\end{pmatrix}$
 
 as the vector of states of the system. We will also work with time-discretized dynamics, and refer to $x_n$ as the state at time $t = n \Delta t$ (assuming discretization time $\Delta t$)
 

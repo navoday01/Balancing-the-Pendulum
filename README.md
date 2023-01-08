@@ -92,10 +92,14 @@ To understand it in a better way we can compare the plot of omega with the plot 
 The plot of value function with respect to states can be observed that the value function is maximum when $\omega$ is zero and $\theta$ is at it's extreme values.
 
 <p align = 'center'><img src ='assets\value1.png'></p> 
-<p align = 'center'><em>Plot of control vs time</em></p> 
+<p align = 'center'><em>Plot of Value Function </em></p> 
 
 The plot of policy, explains that whenever Velocity i.e $\omega$ is is positive the policy also has the positive value and and when velocity is negative, the policy is also negative except for few cases. 
 
 <p align = 'center'><img src ='assets\policy1.png'></p> 
-<p align = 'center'><em>Plot of control vs time</em></p> 
+<p align = 'center'><em>Plot of Policy</em></p> 
+
+![Alt text](assets\value1.png)|![Alt text](assets\policy1.png)
+ :--:|:--:
+  *Plot of Value Function* |*Plot of Policy*
 

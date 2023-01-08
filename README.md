@@ -90,10 +90,8 @@ To understand it in a better way we can compare the plot of omega with the plot 
 <p align = 'center'><em>Plot of control vs time</em></p> 
 
 ![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/cost1.png)|![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/state1.png)
-:--:|:--:
 *Plot of cost vs episodes* |
 ![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/control1.png)|
-:--:|:--:
 *Plot of control vs time* |*Plot of states vs time*
 
 The plot of value function with respect to states can be observed that the value function is maximum when $\omega$ is zero and $\theta$ is at it's extreme values. The plot of policy, explains that whenever Velocity i.e $\omega$ is is positive the policy also has the positive value and and when velocity is negative, the policy is also negative except for few cases. 

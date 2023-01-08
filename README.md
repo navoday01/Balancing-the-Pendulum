@@ -30,11 +30,8 @@ This cost mostly penalizes deviations from the inverted position but also encour
 
 ## Q-table
 
-The Q-learning algorithm is implemented with a table. For the action value function given in equation~\ref{eq:action_value} the assumptions are made such that $u$ can take only **three** possible values. For states $\theta$ can take any value in the range of [0,2 $\pi$] and that $\omega$ can take any value between [-6,6].
+The Q-learning algorithm is implemented with a table. For the action value function given in equation, $Q(x_t, u_t)$ the assumptions are made such that $u$ can take only **three** possible values. For states $\theta$ can take any value in the range of $\math{[0,2\pi]}$ and that $\omega$ can take any value between $\math{[-6,6]}$. In order to build the table, we will need to discretize the states. So for the learning algorithm, we will use $\mathbf{50}$ discretized states for $\theta$ and $\mathbf{50}$ for $\omega$. Hence the dimension of the Q-table will be of dimension $\mathbf{50x50x3}$.
 
-In order to build the table, we will need to discretize the states. So for the learning algorithm, we will use **50** discretized states for $\theta$ and **50** for $\omega$. Hence the dimension of the Q-table will be of dimension **50x50x3**.
-
-$$ Q(x_t, u_t) $$
 
 Q-table gives the quality of the state and action pair, where value of Q is given by 
 

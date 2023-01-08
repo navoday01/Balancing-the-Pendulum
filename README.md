@@ -40,3 +40,33 @@ Q-table gives the quality of the state and action pair, where value of $Q$ is gi
 $$ Q(x_t,u_t)=g(x_t, u_t)+ \alpha \min_{u}Q(x_{t+1}, u) $$
 
 To obtain next state in above equation, $x_{n+1}$ given $(x_n, u_n)$ a function is defined that integrates the pendulum for one step of $0.1$ seconds and returns the next state of the pendulum as a $2D$ numpy array at the end of the integration.
+
+## Policy and value function
+
+The action-value function combines all results of the single-stage predictive search. For each state-action pair, the optimal expected long-term return is displayed, allowing the selection of optimal actions without the knowledge of future states and their value, and thus without knowing anything about the dynamics of the environment.
+
+$$ J^{*}(x_t) = \min_{u}Q(x_{t}, u) $$
+$$ \mu^{*}(x) = arg \min_{u}Q(x_t, u) $$
+
+Important for Reinforcement is that both, policy, as well as value function, can be learned and lead to a close optimal behavior.
+
+## $\epsilon$-greedy policy
+Epsilon-Greedy is a simple method to balance exploration and exploitation by choosing between exploration and exploitation randomly. In this method, epsilon refers to the probability of choosing to explore, exploits most of the time with a small chance of exploring given by:
+
+$$
+    u_t = \begin{cases}
+            \textit{random action} & \textit{if probability } < \epsilon\\
+            \textit{arg } \min_{u} Q(x_t, u), & \textit{else}  \\
+          \end{cases}
+$$
+
+## Q-learning
+
+Q-learning finds an optimal policy in the sense of maximizing the expected value of the total reward over any and all successive steps, starting from the current state. Temporal difference error is calculate over eachstep size using equation,
+
+$$ \delta_{t} = g(x_t, u_t) + \alpha \min_{u}Q(x_{t+1}, u) - Q(x_t, u_t) $$
+
+and the value of Q is updated by adding the product of learning rate and tempral difference error to Q as shown in equation,
+
+$$ Q(x_t, u_t) \gets Q(x_t, u_t) + \gamma \delta_{t} $$
+

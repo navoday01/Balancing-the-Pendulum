@@ -46,6 +46,7 @@ To obtain next state in above equation, $x_{n+1}$ given $(x_n, u_n)$ a function 
 The action-value function combines all results of the single-stage predictive search. For each state-action pair, the optimal expected long-term return is displayed, allowing the selection of optimal actions without the knowledge of future states and their value, and thus without knowing anything about the dynamics of the environment.
 
 $$ J^{*}(x_t) = \min_{u}Q(x_{t}, u) $$
+
 $$ \mu^{*}(x) = arg \min_{u}Q(x_t, u) $$
 
 Important for Reinforcement is that both, policy, as well as value function, can be learned and lead to a close optimal behavior.

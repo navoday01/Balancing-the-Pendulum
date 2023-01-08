@@ -11,10 +11,13 @@ The inverted pendulum has a limit on the maximum torque it can apply, therefore 
 <p align = 'center'><img src ='pendulum.png' width="150" height="300" ></p> 
 <p align = 'center'><em>Pendulum Model</em></p> 
 
-In the following, we will write $$x = \begin{pmatrix} 
+In the following, we will write 
+
+$$x = \begin{pmatrix} 
 \theta \\ 
 \omega 
-\end{pmatrix}$$ as the vector of states of the system. We will also work with time-discretized dynamics, and refer to $x_n$ as the state at time $t = n \Delta t$ (assuming discretization time $\Delta t$)
+\end{pmatrix}$$ 
+as the vector of states of the system. We will also work with time-discretized dynamics, and refer to $x_n$ as the state at time $t = n \Delta t$ (assuming discretization time $\Delta t$)
 
 We want to minimize the following discounted cost function
 

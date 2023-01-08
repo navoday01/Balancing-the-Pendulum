@@ -8,11 +8,7 @@ Implemented Q-learning with a Q-table to achieve desired position for simple pen
 
 The inverted pendulum has a limit on the maximum torque it can apply, therefore it is necessary for the pendulum to do a few "back and forth" motions to be able to reach the inverted position ($\theta=\pi$) from the standing still non-inverted position ($\theta=0$).
 
-\begin{figure}[htbp]
-    \centerline{\includegraphics[scale = 0.30]{pendulum.png}}
-    \caption{Pendulum Model}
-    \label{fig:pendulum}
-\end{figure}
+<p align = 'center'><img src ='pendulum.png' alt></p> 
 
 In the following, we will write $x = \begin{pmatrix} \theta \\ \omega \end{pmatrix}$ as the vector of states of the system. We will also work with time-discretized dynamics, and refer to $x_n$ as the state at time $t = n \Delta t$ (assuming discretization time $\Delta t$)
 

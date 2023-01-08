@@ -3,10 +3,10 @@ Implemented Q-learning with a Q-table to achieve desired position for simple pen
 
 <p align = 'center'>
 <img src ='assets/pendulum.gif' alt>
-<h1 align="center">Material Bread</h1>  
+<em align="center">Material Bread</em>  
 </p>   
-<p align = 'center'>  
+<!-- <p align = 'center'>  
 <em>simple pendulum</em>
-</p> 
+</p>  -->
 
   

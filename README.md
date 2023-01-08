@@ -17,6 +17,7 @@ $$x = \begin{pmatrix}
 \theta \\ 
 \omega 
 \end{pmatrix}$$ 
+
 as the vector of states of the system. We will also work with time-discretized dynamics, and refer to $x_n$ as the state at time $t = n \Delta t$ (assuming discretization time $\Delta t$)
 
 We want to minimize the following discounted cost function

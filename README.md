@@ -99,7 +99,7 @@ The plot of policy, explains that whenever Velocity i.e $\omega$ is is positive 
 <!-- <p align = 'center'><img src ='assets\policy1.png'></p> 
 <p align = 'center'><em>Plot of Policy</em></p>  -->
 
-![](assets\value1.png)|![](assets\policy1.png)
+![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/value1.png)|![](https://github.com/navoday01/Balancing-the-Pendulum/blob/main/assets/policy1.png)
  :--:|:--:
   *Plot of Value Function* |*Plot of Policy*
 

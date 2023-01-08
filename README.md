@@ -6,7 +6,7 @@ Implemented Q-learning with a Q-table to achieve desired position for simple pen
 
 ## Problem Formulation
 
-The inverted pendulum has a limit on the maximum torque it can apply, therefore it is necessary for the pendulum to do a few "back and forth" motions to be able to reach the inverted position ($\theta=\pi$) from the standing still non-inverted position ($\theta=0$).
+The inverted pendulum has a limit on the maximum torque it can apply, therefore it is necessary for the pendulum to do a few "back and forth" motions to be able to reach the inverted position ( $\theta=\pi$ ) from the standing still non-inverted position ( $\theta=0$ ).
 
 <p align = 'center'><img src ='pendulum.png' alt></p> 
 
